@@ -33,7 +33,7 @@ fun CalculatorUI(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(start = 16.dp, end = 16.dp, top = 32.dp, bottom = 50.dp),
+            .padding(start = 16.dp, end = 16.dp, top = 70.dp, bottom = 60.dp),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
         // Écran d’affichage
