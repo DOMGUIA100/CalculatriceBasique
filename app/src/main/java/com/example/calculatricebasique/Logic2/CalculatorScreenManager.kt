@@ -1,4 +1,4 @@
-package Logic2
+package com.example.calculatricebasique.Logic2
 
 package com.example.calculatricebasique.logic2
 
