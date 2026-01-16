@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.sp
  * @param onButtonClick Fonction callback appelée quand un bouton est cliqué.
  */
 @Composable
-fun CalculatorUI(
+fun CalculatriceUI(
     expression: String,
     onButtonClick: (String) -> Unit
 ) {

@@ -5,13 +5,13 @@ package com.example.calculatricebasique.Logic2
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import com.example.calculatricebasique.logic1.CalculatorOperations
+import com.example.calculatricebasique.logic1.CalculatriceOperations
 
 /**
  * Gère l'état de l'écran de la calculatrice et les interactions
  * avec les boutons DEL, C, opérateurs et chiffres.
  */
-class CalculatorScreenManager {
+class CalculatriceInteraction {
 
     var expression by mutableStateOf("0")  // texte affiché à l'écran
         private set
@@ -36,7 +36,7 @@ class CalculatorScreenManager {
                 }
             }
             "=" -> {
-                expression = CalculatorOperations.calculate(expression)
+                expression = CalculatriceOperations.calcul(expression)
                 resetNext = true
             }
             in operators -> {

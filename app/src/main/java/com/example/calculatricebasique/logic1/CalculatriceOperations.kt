@@ -3,19 +3,17 @@ package com.example.calculatricebasique.logic1
 import net.objecthunter.exp4j.ExpressionBuilder
 
 
-/**
- * Objet qui gère uniquement le calcul mathématique de l'expression.
- */
-object CalculatorOperations {
+/* Objet qui gère uniquement le calcul mathématique de l'expression. */
+object CalculatriceOperations {
 
     /**
-     * Calcule le résultat d'une expression mathématique passée sous forme de String.
-     * Exemple : "3+5×2"
-     *
+      Calcule le résultat d'une expression mathématique passée sous forme de String.
+      Exemple : "3+5×2"
+
      * @param expression L'expression à calculer
      * @return Résultat formaté en String ou "Erreur" si invalide
      */
-    fun calculate(expression: String): String {
+    fun calcul(expression: String): String {
         return try {
             // Remplacer les symboles Compose par ceux reconnus par exp4j
             val expr = expression
